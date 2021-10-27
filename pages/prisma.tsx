@@ -1,21 +1,24 @@
 import type { GetServerSideProps, NextPage } from "next";
+import { useEffect, useState } from "react";
 
-import { PrismaClient } from "../prisma/client";
+import { Post, PrismaClient } from "../prisma/client";
 
 const prisma = new PrismaClient();
-
-interface Post {
-  post_id: number;
-  content: string;
-  title: string;
-  author_id: number;
-}
 
 interface PrismaProps {
   posts: Post[];
 }
 
-const Prisma: NextPage<PrismaProps> = ({ posts }) => {
+const Prisma: NextPage<PrismaProps> = () => {
+  const [posts, setPosts] = useState<Post[]>([]);
+
+  useEffect(() => {
+    (async () => {
+      const fetchedPosts = await (await fetch("/api/prisma")).json();
+      setPosts(fetchedPosts);
+    })();
+  }, []);
+
   return (
     <div>
       {posts.map((post) => (
@@ -26,14 +29,6 @@ const Prisma: NextPage<PrismaProps> = ({ posts }) => {
       ))}
     </div>
   );
-};
-
-export const getServerSideProps: GetServerSideProps = async (context) => {
-  const posts = await prisma.post.findMany();
-
-  return {
-    props: { posts },
-  };
 };
 
 export default Prisma;
