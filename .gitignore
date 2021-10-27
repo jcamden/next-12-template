@@ -41,3 +41,6 @@ yarn-error.log*
 
 # check in cases that need node_modules
 # /node_modules
+
+# ignore prisma since the client is built with private URLS
+prisma
