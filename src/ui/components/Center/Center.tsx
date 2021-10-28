@@ -1,6 +1,6 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode } from "react";
 
-interface CenterProps {
+export interface CenterProps {
   children: ReactNode;
 }
 

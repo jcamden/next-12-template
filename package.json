@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "jest": "jest"
+    "jest": "jest",
+    "story": "start-storybook -p 6006 --ci",
+    "story:build": "build-storybook"
   },
   "dependencies": {
     "@prisma/client": "^3.3.0",
@@ -17,7 +19,15 @@
     "regenerator-runtime": "^0.13.9"
   },
   "devDependencies": {
+    "@babel/core": "^7.15.8",
     "@jest/types": "^27.2.5",
+    "@storybook/addon-essentials": "^6.3.12",
+    "@storybook/addon-links": "^6.3.12",
+    "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/addons": "^6.3.12",
+    "@storybook/react": "^6.3.12",
+    "@storybook/theming": "^6.3.12",
+    "@types/babel__core": "^7",
     "@types/jest": "^27.0.2",
     "@types/node": "16.11.6",
     "@types/react": "17.0.33",
