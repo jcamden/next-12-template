@@ -1,9 +1,7 @@
-import type { GetServerSideProps, NextPage } from "next";
+import type { NextPage } from "next";
 import { useEffect, useState } from "react";
 
-import { Post, PrismaClient } from "../prisma/client";
-
-const prisma = new PrismaClient();
+import { Post } from "../prisma/client";
 
 interface PrismaProps {
   posts: Post[];
@@ -22,10 +20,9 @@ const Prisma: NextPage<PrismaProps> = () => {
   return (
     <div>
       {posts.map((post) => (
-        <>
-          <div key={post.post_id}>{post.content}</div>
-          <br />
-        </>
+        <div key={post.post_id} className="text-blue hover:text-red-500">
+          {post.content}
+        </div>
       ))}
     </div>
   );

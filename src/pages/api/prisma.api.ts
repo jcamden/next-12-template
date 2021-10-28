@@ -13,7 +13,6 @@ const handler = async (
   res: NextApiResponse<Post[] | ErrRes>
 ) => {
   try {
-    // type Post was generated from Prisma schema!!
     const posts = await prisma.post.findMany();
     res.status(200).json(posts);
   } catch (error) {

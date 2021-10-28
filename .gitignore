@@ -43,4 +43,5 @@ yarn-error.log*
 # /node_modules
 
 # ignore prisma since the client is built with private URLS
+# prisma client has been made its own private repo
 prisma
