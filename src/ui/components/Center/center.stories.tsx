@@ -1,11 +1,11 @@
-import { Meta, Story } from "@storybook/react";
-import React from "react";
+import { Meta, Story } from '@storybook/react';
+import React from 'react';
 
-import { Center, CenterProps } from "./";
+import { Center, CenterProps } from './';
 
 export default {
-  title: "Example/Center",
-  component: Center,
+    title: 'Example/Center',
+    component: Center,
 } as Meta;
 
 const Template: Story<CenterProps> = (args) => <Center {...args} />;

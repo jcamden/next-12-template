@@ -3766,7 +3766,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/prettier@npm:^2.1.5":
+"@types/prettier@npm:^2, @types/prettier@npm:^2.1.5":
   version: 2.4.1
   resolution: "@types/prettier@npm:2.4.1"
   checksum: df330c2d6fe7c282839b0f17701e069a9c6c96d2ff54704e933a1b3c1b98844d963a7cb00c5629d173604892ceee802312bbaeb8a97f5da21e13db8f653b519e
@@ -11825,6 +11825,7 @@ __metadata:
     "@types/babel__core": ^7
     "@types/jest": ^27.0.2
     "@types/node": 16.11.6
+    "@types/prettier": ^2
     "@types/react": 17.0.33
     autoprefixer: ^10.3.7
     babel-jest: ^27.3.1
@@ -11835,6 +11836,7 @@ __metadata:
     postcss: ^8.3.11
     postcss-flexbugs-fixes: ^5.0.2
     postcss-preset-env: ^6.7.0
+    prettier: ^2.4.1
     prisma: ^3.3.0
     react: 17.0.2
     react-dom: 17.0.2
@@ -13424,6 +13426,15 @@ __metadata:
   version: 1.1.2
   resolution: "prelude-ls@npm:1.1.2"
   checksum: c4867c87488e4a0c233e158e4d0d5565b609b105d75e4c05dc760840475f06b731332eb93cc8c9cecb840aa8ec323ca3c9a56ad7820ad2e63f0261dadcb154e4
+  languageName: node
+  linkType: hard
+
+"prettier@npm:^2.4.1":
+  version: 2.4.1
+  resolution: "prettier@npm:2.4.1"
+  bin:
+    prettier: bin-prettier.js
+  checksum: cc6830588b401b0d742862fe9c46bc9118204fb307c3abe0e49e95b35ed23629573807ffdf9cdd65289c252a0bb51fc0171437f6626ee36378dea80f0ee80b91
   languageName: node
   linkType: hard
 
