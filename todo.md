@@ -1,6 +1,1 @@
-- gha
-- gcp
-- jest
-- storybook
-- wdio
-- tailwind
+-   wdio

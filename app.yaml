@@ -1,0 +1,9 @@
+# F1 is default, but still
+instance_class: F1
+env: standard
+runtime: nodejs14
+service: default
+handlers:
+    - url: /.*
+      secure: always
+      script: auto
