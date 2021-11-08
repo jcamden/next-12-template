@@ -3,11 +3,11 @@ import { useEffect, useState } from 'react';
 
 import { Post } from '../../prisma/client';
 
-interface PrismaProps {
+interface PrismaApiProps {
     posts: Post[];
 }
 
-export const Prisma: NextPage<PrismaProps> = () => {
+export const PrismaApi: NextPage<PrismaApiProps> = () => {
     const [posts, setPosts] = useState<Post[]>([]);
 
     useEffect(() => {
@@ -23,6 +23,7 @@ export const Prisma: NextPage<PrismaProps> = () => {
                 <div
                     key={post.post_id}
                     className="text-blue hover:text-red-500"
+                    data-testId={'post' + post.post_id}
                 >
                     {post.content}
                 </div>

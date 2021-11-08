@@ -1,2 +1,2 @@
-import { Prisma } from './prisma';
-export default Prisma;
+import { PrismaApi } from './prisma-api';
+export default PrismaApi;
