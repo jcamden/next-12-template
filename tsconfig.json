@@ -15,11 +15,12 @@
         "jsx": "preserve",
         "incremental": true,
         "types": [
-            "node",
-            "webdriverio/async",
             "@wdio/cucumber-framework",
+            "@wdio/selenium-standalone-service",
             "expect-webdriverio",
-            "@wdio/selenium-standalone-service"
+            "jest",
+            "node",
+            "webdriverio/async"
         ]
     },
     "include": [

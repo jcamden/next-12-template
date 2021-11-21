@@ -1,0 +1,23 @@
+# I would recommend reconfiguring .gitignore for yarn pnp zero installs (i.e. include cache)
+# before you start doing any continuous integration tasks.
+
+name: Semantic Release
+
+on:
+    push:
+        branches: [main]
+
+jobs:
+    Test:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - name: Use Node.js 16
+              uses: actions/setup-node@v2
+              with:
+                  node-version: 16
+            - run: yarn install
+            - name: Create new release
+              env:
+                  GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+              run: yarn semantic-release

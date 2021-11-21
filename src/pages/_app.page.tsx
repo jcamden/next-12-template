@@ -1,12 +1,14 @@
-import "tailwindcss/tailwind.css";
+import 'tailwindcss/tailwind.css';
 
-import { AppProps } from "next/app";
+import { AppProps } from 'next/app';
+
+import { State } from '../state/state';
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
-  return (
-    <div>
-      <Component {...pageProps} />
-    </div>
-  );
+    return (
+        <State>
+            <Component {...pageProps} />
+        </State>
+    );
 };
 export default MyApp;
