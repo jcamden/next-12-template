@@ -13,9 +13,9 @@
         "story": "start-storybook -p 6006 --ci"
     },
     "dependencies": {
-        "@prisma/client": "^3.4.0",
+        "@prisma/client": "^3.5.0",
         "immer": "^9.0.6",
-        "next": "12.0.2",
+        "next": "12.0.4",
         "react": "17.0.2",
         "react-dom": "17.0.2",
         "regenerator-runtime": "^0.13.9",
@@ -31,38 +31,39 @@
         "@storybook/react": "^6.3.12",
         "@storybook/theming": "^6.3.12",
         "@types/babel__core": "^7.1.16",
-        "@types/jest": "^27.0.2",
-        "@types/node": "16.11.6",
-        "@types/prettier": "^2.4.1",
-        "@types/react": "17.0.34",
-        "@wdio/cli": "^7.16.4",
-        "@wdio/cucumber-framework": "^7.16.4",
-        "@wdio/local-runner": "^7.16.4",
-        "@wdio/selenium-standalone-service": "^7.16.3",
+        "@types/jest": "^27.0.3",
+        "@types/node": "16.11.9",
+        "@types/prettier": "^2.4.2",
+        "@types/react": "17.0.35",
+        "@wdio/cli": "^7.16.8",
+        "@wdio/cucumber-framework": "^7.16.6",
+        "@wdio/local-runner": "^7.16.8",
+        "@wdio/selenium-standalone-service": "^7.16.6",
         "@wdio/spec-reporter": "^7.16.4",
         "autoprefixer": "^10.4.0",
         "babel-jest": "^27.3.1",
-        "chromedriver": "^95.0.0",
+        "chromedriver": "^96.0.0",
         "eslint": "<8.0.0",
-        "eslint-config-next": "12.0.2",
+        "eslint-config-next": "12.0.4",
         "expect-webdriverio": "^3.1.4",
         "jest": "^27.3.1",
         "postcss": "^8.3.11",
         "postcss-flexbugs-fixes": "^5.0.2",
         "postcss-preset-env": "^6.7.0",
         "prettier": "^2.4.1",
-        "prisma": "^3.4.0",
+        "prisma": "^3.5.0",
         "selenium-standalone": "^8.0.4",
         "tailwindcss": "^2.2.19",
         "ts-jest": "^27.0.7",
         "ts-node": "^10.4.0",
         "typescript": "4.4.4",
         "wdio-chromedriver-service": "^7.2.2",
-        "webdriverio": "^7.16.4"
+        "webdriverio": "^7.16.8"
     },
     "dependenciesMeta": {
         "selenium-standalone@8.0.4": {
             "unplugged": true
         }
-    }
+    },
+    "packageManager": "yarn@3.1.0"
 }
